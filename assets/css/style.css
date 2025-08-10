@@ -87,7 +87,7 @@ body {
     cursor: pointer;
     transition: 0.15s ease-in-out;
     margin: 0;
-    background-image: url("/assets/images/svg/heart-checkbox.svg");
+    background-image: url("/-wedding/assets/images/svg/heart-checkbox.svg");
     background-size: 0;
     background-repeat: no-repeat;
     background-position: center center;
