@@ -10,3 +10,9 @@ body {
     padding: 0 30px;
     margin: 0 auto;
 }
+
+
+.wedding-form {
+    display: flex;
+    flex-direction: column;
+}
