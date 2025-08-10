@@ -1,12 +1,22 @@
 :root {
-    --backgound-color-primary: #851717;
+    --backgound-color-primary: rgb(163, 28, 28);
+    --backgound-color-secondary: rgb(216, 61, 61);
+    --backgound-color-body: #e5fdff;
+    --backgound-color-white: #fff;
+    --text-color-white: #fff;
+    --border-color-white: #fff;
+    --border-color-primary: rgb(163, 28, 28);
+}
+* {
+    box-sizing: border-box;
 }
 body {
-    background-color: var(--backgound-color-primary);
+    background-color: var(--backgound-color-body);
+    font-family: Arial;
 }
 .container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1000px;
     padding: 0 30px;
     margin: 0 auto;
 }
@@ -15,4 +25,120 @@ body {
 .wedding-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--backgound-color-primary);
+    background-color: var(--backgound-color-secondary);
+}
+.wedding-form h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color-white);
+    text-align: center;
+    text-wrap: balance;
+}
+.wedding-form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 10px 10px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: var(--border-color-white);
+}
+.wedding-form fieldset legend {
+    color: var(--text-color-white);
+    font-style: italic;
+}
+.wedding-form label {
+    gap: 5px;
+    width: 100%;
+}
+.wedding-form label span {
+    color: var(--text-color-white);
+}
+.wedding-form__input {
+    display: flex;
+    flex-direction: column;
+}
+.wedding-form__input input {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.wedding-form__checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.wedding-form__checkbox input {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    margin: 0;
+    background-image: url("/assets/images/svg/heart-checkbox.svg");
+    background-size: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wedding-form__checkbox input:checked {
+    background-size: 100%;
+}
+.wedding-form__radio {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+.wedding-form__radio input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 5px solid var(--border-color-white);
+    border-radius: 50%;
+    background-color: var(--backgound-color-white);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+}
+
+.wedding-form__radio input:checked {
+    background-color: var(--backgound-color-secondary);
+}
+.wedding-form__textarea {
+    display: flex;
+}
+.wedding-form__textarea textarea {
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+.wedding-form__submit {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color-white);
+    background-color: var(--backgound-color-secondary);
+    color: var(--text-color-white);
 }

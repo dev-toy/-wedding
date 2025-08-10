@@ -6,17 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function addFormFields() {
         const formData = new FormData(formElement)
-        formFields.name = formData.get('NAME')
-        formFields.surname = formData.get('SURNAME')
-        formFields.checkbox = {
-            checkbox_1: formData.get('check1'),
-            checkbox_2: formData.get('check2'),
-            checkbox_3: formData.get('check3'),
-            checkbox_4: formData.get('check4'),
-            checkbox_5: formData.get('check5'),
+        formFields.name = formData.get('name')
+        formFields.surname = formData.get('surname')
+        formFields.visit = formData.get('visit')
+        formFields.alcohol = {
+            champagne: formData.get('champagne') === null ? 'no' : 'yes',
+            vine: formData.get('vine') === null ? 'no' : 'yes',
+            vodka: formData.get('vodka') === null ? 'no' : 'yes',
+            whiskey: formData.get('whiskey') === null ? 'no' : 'yes',
+            cognac: formData.get('cognac') === null ? 'no' : 'yes',
+            non_alcoholic: formData.get('non-alcoholic') === null ? 'no' : 'yes',
         }
-        formFields.radio = formData.get('radio')
-        formFields.comment = formData.get('COMMENT')
+        formFields.comment = formData.get('comment') === null ? 'no' : formData.get('comment')
     }
 
     async function addUser() {

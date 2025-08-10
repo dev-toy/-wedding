@@ -2,18 +2,20 @@
 <html lang="ru">
 <head>
   <!--dev-->
-<!--  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">-->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <!--prod-->
-  <link rel="shortcut icon" href="/-wedding/assets/images/favicon.ico" type="image/x-icon">
+<!--  <link rel="shortcut icon" href="/-wedding/assets/images/favicon.ico" type="image/x-icon">-->
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wedding</title>
   <!--dev-->
-<!--  <link rel="stylesheet" href="/assets/css/style.css">-->
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <!--prod-->
-  <link rel="stylesheet" href="/-wedding/assets/css/style.css">
+<!--  <link rel="stylesheet" href="/-wedding/assets/css/reset.css">-->
+<!--  <link rel="stylesheet" href="/-wedding/assets/css/style.css">-->
 </head>
 <body>
 <main>
@@ -26,46 +28,81 @@
     <div class="container">
       <div class="wedding-form__wrap">
         <form class="wedding-form">
-          <label>
-            <span>Фамилия</span>
-            <input type="text" name="NAME" placeholder="Иван" required>
-          </label>
-          <label>
-            <span>Имя</span>
-            <input type="text" name="SURNAME" placeholder="Иван">
-          </label>
-          <label>
-            <span>Чекбокс</span>
-            <input type="checkbox" name="check1" placeholder="1" value="check1">
-            <input type="checkbox" name="check2" placeholder="2" value="check2">
-            <input type="checkbox" name="check3" placeholder="3" value="check3">
-            <input type="checkbox" name="check4" placeholder="4" value="check4">
-            <input type="checkbox" name="check5" placeholder="5" value="check5">
-          </label>
-          <label>
-            <span>Радио</span>
-            <input type="radio" name="radio" placeholder="1" value="1">
-            <input type="radio" name="radio" placeholder="2" value="2">
-            <input type="radio" name="radio" placeholder="3" value="3">
-          </label>
-          <label>
-            <span>Коммент</span>
-            <textarea name="COMMENT"></textarea>
-          </label>
+          <h3>Ответьте, пожалуйста, на несколько вопросов, которые мы для Вас подготовили</h3>
+          <h3>Просим подтвердить свое присутствие любым удобным для Вас способом до 1 сентября 2025 года</h3>
+          <fieldset>
+            <legend>Ваши данные</legend>
+            <label class="wedding-form__input">
+              <span>Фамилия</span>
+              <input type="text" name="surname" placeholder="Иванов" required>
+            </label>
+            <label class="wedding-form__input">
+              <span>Имя</span>
+              <input type="text" name="name" placeholder="Иван">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Сможете ли присутствовать на нашем торжестве?</legend>
+            <label class="wedding-form__radio">
+              <span>Я с удовольствием приду</span>
+              <input type="radio" name="visit" value="Я с удовольствием приду">
+            </label>
+            <label class="wedding-form__radio">
+              <span>Буду со своей парой</span>
+              <input type="radio" name="visit" value="Буду со своей парой">
+            </label>
+            <label class="wedding-form__radio">
+              <span>К сожалению, не смогу присутствовать</span>
+              <input type="radio" name="visit" value="К сожалению, не смогу присутствовать">
+            </label>
+            <label class="wedding-form__radio">
+              <span>Сообщу позже</span>
+              <input type="radio" name="visit" value="Сообщу позже">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Что предпочитаете из напитков?</legend>
+            <label class="wedding-form__checkbox">
+              <span>Шампанское</span>
+              <input type="checkbox" name="champagne" value="champagne">
+            </label>
+            <label class="wedding-form__checkbox">
+              <span>Вино</span>
+              <input type="checkbox" name="vine" value="vine">
+            </label>
+            <label class="wedding-form__checkbox">
+              <span>Водка</span>
+              <input type="checkbox" name="vodka" value="vodka">
+            </label>
+            <label class="wedding-form__checkbox">
+              <span>Виски</span>
+              <input type="checkbox" name="whiskey" value="whiskey">
+            </label>
+            <label class="wedding-form__checkbox">
+              <span>Коньяк</span>
+              <input type="checkbox" name="cognac" value="cognac">
+            </label>
+            <label class="wedding-form__checkbox">
+              <span>Не пью алкоголь</span>
+              <input type="checkbox" name="non-alcoholic" value="non-alcoholic">
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Пару строк для эмоций</legend>
+            <label class="wedding-form__textarea">
+              <textarea name="comment"></textarea>
+            </label>
+          </fieldset>
           <button class="wedding-form__submit" type="submit">Отправить</button>
         </form>
       </div>
     </div>
   </section>
-  <input type="text" id="taskInput" />
-  <button id="buttonAdd" type="button">Добавить</button>
-
-  <ul id="taskList"></ul>
 </main>
 
 <!--dev-->
-<!--<script src="/assets/js/script.js"></script>-->
+<script src="/assets/js/script.js"></script>
 <!--prod-->
-<script src="/-wedding/assets/js/script.js"></script>
+<!--<script src="/-wedding/assets/js/script.js"></script>-->
 </body>
 </html>
