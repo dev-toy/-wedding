@@ -1,2 +1,12 @@
-.test {
+:root {
+    --backgound-color-primary: #851717;
+}
+body {
+    background-color: var(--backgound-color-primary);
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 30px;
+    margin: 0 auto;
 }

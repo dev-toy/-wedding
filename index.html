@@ -1,19 +1,40 @@
 <!doctype html>
 <html lang="ru">
 <head>
+  <!--dev-->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <!--prod-->
+  <!--<link rel="shortcut icon" href="/-wedding/assets/images/favicon.ico" type="image/x-icon">-->
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wedding</title>
-  <link rel="stylesheet" href="/-wedding/assets/css/style.css">
+  <!--dev-->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!--prod-->
+  <!--<link rel="stylesheet" href="/-wedding/assets/css/style.css">-->
 </head>
 <body>
 <main>
-  <section class="test">
-    <h1>Свадьба Вовы и Тони</h1>
+  <section class="wedding-s01">
+    <div class="container">
+      <h1>Свадьба Вовы и Тони</h1>
+
+
+      <div>
+        <input type="text" id="taskInput" />
+        <button id="buttonAdd" type="button">Добавить</button>
+
+        <ul id="taskList"></ul>
+      </div>
+    </div>
   </section>
 </main>
-<script src="/-wedding/assets/js/script.js"></script>
+
+<!--dev-->
+<script src="/assets/js/script.js"></script>
+<!--prod-->
+<!--<script src="/-wedding/assets/js/script.js"></script>-->
 </body>
 </html>
