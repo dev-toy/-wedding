@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.querySelector('.wedding-form');
-    const formSubmit = document.querySelector('.wedding-form__submit')
     const API_URL = "https://00de97822c6ccace.mokky.dev";
     let formFields = {}
 
     function addFormFields() {
         const formData = new FormData(formElement)
         formFields.name = formData.get('name')
-        formFields.surname = formData.get('surname')
         formFields.visit = formData.get('visit')
         formFields.alcohol = {
             champagne: formData.get('champagne') === null ? 'no' : 'yes',
@@ -23,12 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
     async function addUser() {
         addFormFields()
         const resp = await fetch(`${API_URL}/users`, {
-            method: "POST", // 👈 Отправляем именно POST-запрос
+            method: "POST",
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(formFields), // 👈 И передаем сам текст задачи
+            body: JSON.stringify(formFields),
         });
 
         if (resp.ok) {

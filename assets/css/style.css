@@ -1,87 +1,641 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Regular.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-ExtraboldItalic.eot');
+    src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ExtraboldItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ExtraboldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Bold.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Black.eot');
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Black.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Light.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Semibold.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Medium.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-MediumItalic.eot');
+    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-MediumItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-BlackItalic.eot');
+    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BlackItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLight.eot');
+    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-RegularItalic.eot');
+    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-RegularItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-SemiboldItalic.eot');
+    src: local('Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-SemiboldItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-HeavyItalic.eot');
+    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-HeavyItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Extrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-BoldItalic.eot');
+    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BoldItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLightItalic.eot');
+    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLightItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-LightItalic.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-LightItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Heavy.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Heavy.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-Thin.eot');
+    src: local('Gilroy Thin'), local('Gilroy-Thin'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Thin.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/-wedding/assets/fonts/gilroy/Gilroy-ThinItalic.eot');
+    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ThinItalic.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/gilroy/Gilroy-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AlayaRoza';
+    src: url('/-wedding/assets/fonts/alaya-roza/AlayaRoza-Regular.eot');
+    src: local('Alaya Roza'), local('AlayaRoza-Regular'),
+    url('/-wedding/assets/fonts/alaya-roza/AlayaRoza-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/alaya-roza/AlayaRoza-Regular.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/alaya-roza/AlayaRoza-Regular.woff') format('woff') ;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Hamiltoneg';
+    src: url('/-wedding/assets/fonts/hamiltoneg/mr_hamiltoneg.eot');
+    src: local('mr_hamiltoneg'), local('mr hamiltoneg'),
+    url('/-wedding/assets/fonts/hamiltoneg/mr_hamiltoneg.eot?#iefix') format('embedded-opentype'),
+    url('/-wedding/assets/fonts/hamiltoneg/mr_hamiltoneg.woff2') format('woff2'),
+    url('/-wedding/assets/fonts/hamiltoneg/mr_hamiltoneg.woff') format('woff') ;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
-    --backgound-color-primary: rgb(163, 28, 28);
-    --backgound-color-secondary: rgb(216, 61, 61);
-    --backgound-color-body: #e5fdff;
-    --backgound-color-white: #fff;
-    --text-color-white: #fff;
-    --border-color-white: #fff;
-    --border-color-primary: rgb(163, 28, 28);
+    --color-primary: rgba(128, 17, 34, 1);
+    --color-black: rgba(3, 2, 0, 1);
+    --color-white: rgba(253, 252, 248, 1);
 }
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: var(--backgound-color-body);
-    font-family: Arial;
+    background-color: var(--color-white);
+    font-family: 'Gilroy', 'Arial';
+}
+img {
+    max-width: 100%;
 }
 .container {
     width: 100%;
     max-width: 1000px;
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0 auto;
 }
+.h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'AlayaRoza';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-black);
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.wedding-s01__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 0;
+}
+.wedding-s01__wrap span {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.wedding-s02__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.wedding-s02__image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10%;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    overflow: hidden;
+}
+.wedding-s02__image img {
+    position: relative;
+}
+.wedding-s02__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-15deg) translate(-50%, -50%);
+}
+.wedding-s02__text span {
+    white-space: nowrap;
+    font-family: 'AlayaRoza';
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-white);
+}
+.wedding-s03__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 550px;
+}
+.wedding-s03__wrap h2 {
+    margin-bottom: 10px;
+}
+.wedding-s03__description {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    text-align: center;
+    text-wrap: balance;
+    color: var(--color-black);
+}
+.wedding-s03__description span {
+    color: var(--color-primary);
+}
+.wedding-calendar {
+    max-width: 330px;
+}
+.wedding-calendar__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.wedding-calendar__days,
+.wedding-calendar__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+.wedding-calendar__days span,
+.wedding-calendar__dates span {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-black);
+}
+.wedding-calendar__dates--focus {
+    position: relative;
+}
+.wedding-calendar__dates--focus svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+.wedding-calendar__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wedding-calendar__date {
+    font-family: 'Hamiltoneg';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-primary);
+}
+.wedding-calendar__month {
+    font-family: 'AlayaRoza';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-primary);
+    transform: rotate(-15deg) translate(-10px, -10px);
+}
 
+.wedding-s04__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 550px;
+}
 
-.wedding-form {
+.wedding-s04__wrap h2 {
+    margin-bottom: 20px;
+}
+.wedding-s04__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.wedding-s04__content::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+}
+.wedding-s04__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.wedding-s04__description {
+    position: relative;
+}
+.wedding-s04__description h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-white);
+    text-align: center;
+}
+.wedding-s04__description p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-white);
+    text-align: center;
+    text-wrap: balance;
+}
+.wedding-s05__wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.wedding-s05__hearts--top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.wedding-s05__hearts--bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.wedding-s05__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wedding-s05__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+}
+.wedding-s05__time {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-family: 'Hamiltoneg';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--color-black);
+    transform-origin: right top;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) translate(25px, -50%);
+}
+.wedding-s05__divider {
+    height: 100%;
+    width: 1px;
+    background-color: var(--color-black);
+}
+.wedding-s05__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.wedding-s05__text h3 {
+    font-family: 'AlayaRoza';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-primary);
+}
+.wedding-s05__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-black);
+}
+
+.wedding-s06__wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px solid var(--backgound-color-primary);
-    background-color: var(--backgound-color-secondary);
+    padding: 30px 0;
 }
-.wedding-form h3 {
-    font-size: 28px;
-    font-weight: 500;
-    color: var(--text-color-white);
+.wedding-s06__description {
     text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
     text-wrap: balance;
+    color: var(--color-black);
 }
-.wedding-form fieldset {
+.wedding-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
+    gap: 20px;
+}
+.wedding-form__row {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    padding: 15px 10px 10px;
-    border-width: 2px;
-    border-style: groove;
-    border-color: var(--border-color-white);
 }
-.wedding-form fieldset legend {
-    color: var(--text-color-white);
-    font-style: italic;
-}
-.wedding-form label {
-    gap: 5px;
-    width: 100%;
-}
-.wedding-form label span {
-    color: var(--text-color-white);
-}
-.wedding-form__input {
-    display: flex;
-    flex-direction: column;
+.wedding-form__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.3px;
+    color: var(--color-black);
 }
 .wedding-form__input input {
     outline: none;
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+}
+.wedding-form__input span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-black);
+}
+.wedding-form__text input {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--color-primary);
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--color-black);
+}
+.wedding-form__radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.wedding-form__radio input {
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 5px solid var(--color-white);
+    border-radius: 50%;
+    background-color: var(--color-white);
+    outline: 1px solid var(--color-primary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.wedding-form__radio input:checked {
+    background-color: var(--color-primary);
 }
 .wedding-form__checkbox {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
     align-items: center;
+    gap: 10px;
     cursor: pointer;
 }
 .wedding-form__checkbox input {
     appearance: none;
     width: 1rem;
     height: 1rem;
-    border: 1px solid #dee2e6;
+    border: 1px solid var(--color-primary);
     border-radius: 0.25rem;
     background-color: #fff;
     cursor: pointer;
@@ -94,51 +648,35 @@ body {
 }
 
 .wedding-form__checkbox input:checked {
-    background-size: 100%;
-}
-.wedding-form__radio {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-}
-.wedding-form__radio input {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 1rem;
-    height: 1rem;
-    border: 5px solid var(--border-color-white);
-    border-radius: 50%;
-    background-color: var(--backgound-color-white);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    cursor: pointer;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    margin: 0;
-}
-
-.wedding-form__radio input:checked {
-    background-color: var(--backgound-color-secondary);
-}
-.wedding-form__textarea {
-    display: flex;
-}
-.wedding-form__textarea textarea {
-    outline: none;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    width: 100%;
-    height: 100px;
-    resize: none;
+    background-size: 70%;
 }
 .wedding-form__submit {
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid var(--border-color-white);
-    background-color: var(--backgound-color-secondary);
-    color: var(--text-color-white);
+}
+.wedding-s07__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 550px;
+}
+.wedding-s07__image {
+    width: 100%;
+}
+.wedding-s07__image img {
+    width: 100%;
+}
+.wedding-s07__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+}
+.wedding-s07__description span {
+    text-align: center;
+    text-wrap: balance;
 }

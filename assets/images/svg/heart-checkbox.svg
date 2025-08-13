@@ -1,5 +1,5 @@
 <svg viewBox="0 0 53.145 53.4985" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none">
-	<circle cx="38.1450195" cy="15" r="15" fill="rgb(207,5,5)" />
-	<circle cx="15.1450195" cy="15" r="15" fill="rgb(207,5,5)" />
-	<path d="M4.448 0L29.3458 7.92533L37.6825 33.2338L0 37.2698L4.448 0Z" fill="rgb(207,5,5)" fill-rule="evenodd" transform="matrix(0.707107,-0.707107,0.707107,0.707107,0,27.145)" />
+	<circle cx="38.1450195" cy="15" r="15" fill="rgb(128, 17, 34)" />
+	<circle cx="15.1450195" cy="15" r="15" fill="rgb(128, 17, 34)" />
+	<path d="M4.448 0L29.3458 7.92533L37.6825 33.2338L0 37.2698L4.448 0Z" fill="rgb(128, 17, 34)" fill-rule="evenodd" transform="matrix(0.707107,-0.707107,0.707107,0.707107,0,27.145)" />
 </svg>
