@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             cognac: formData.get('cognac') === null ? 'no' : 'yes',
             non_alcoholic: formData.get('non-alcoholic') === null ? 'no' : 'yes',
         }
-        formFields.comment = formData.get('comment') === null ? 'no' : formData.get('comment')
     }
 
     async function addUser() {
