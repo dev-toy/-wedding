@@ -276,7 +276,7 @@ img {
     justify-content: center;
     max-width: 350px;
     width: 100%;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     border: 1px solid var(--color-primary);
     background-color: var(--color-white);
@@ -289,9 +289,11 @@ img {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.btn:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
+@media (min-width: 1100px) {
+    .btn:hover {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
 }
 .wedding-s01__wrap {
     display: flex;
