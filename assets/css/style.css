@@ -303,6 +303,9 @@ img {
     font-weight: 400;
     line-height: 100%;
 }
+.wedding-s01__number--width {
+    width: 45px;
+}
 .wedding-s02__wrap {
     display: flex;
     align-items: center;
