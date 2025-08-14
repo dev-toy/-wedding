@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.querySelector('.wedding-form');
+    const body = document.querySelector('.body');
+    const modal = document.querySelector('.modal');
+    const modalClose = document.querySelector('.modal__close');
     const API_URL = "https://00de97822c6ccace.mokky.dev";
     let formFields = {}
 
@@ -16,25 +19,37 @@ document.addEventListener('DOMContentLoaded', function () {
             non_alcoholic: formData.get('non-alcoholic') === null ? 'no' : 'yes',
         }
     }
-
+    modalClose.addEventListener('click', function (e) {
+        e.preventDefault()
+        modal.classList.remove('success')
+        modal.classList.remove('error')
+        body.classList.remove('stop-scroll')
+    })
     async function addUser() {
-        addFormFields()
-        const resp = await fetch(`${API_URL}/users`, {
-            method: "POST",
-            headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formFields),
-        });
+        try {
+            addFormFields()
+            const resp = await fetch(`${API_URL}/users`, {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formFields),
+            });
 
-        if (resp.ok) {
-            console.log('Успешно отправлено');
-        } else {
-            console.log('Не удалось отправить');
+            if (resp.ok) {
+                modal.classList.add('success')
+                body.classList.add('stop-scroll')
+            } else {
+                modal.classList.add('error')
+                body.classList.add('stop-scroll')
+            }
+        } catch (error) {
+            modal.classList.add('error')
+            body.classList.add('stop-scroll')
         }
-    }
 
+    }
     formElement.addEventListener('submit', function (e) {
         e.preventDefault()
         addUser()
