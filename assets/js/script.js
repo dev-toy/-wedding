@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.remove('success')
         modal.classList.remove('error')
         body.classList.remove('stop-scroll')
+        formElement.reset();
     })
     async function addUser() {
         try {
